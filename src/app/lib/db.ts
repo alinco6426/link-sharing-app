@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-let isConnected: boolean = false; // Track the connection status
+const connectionString: string = 'mongodb+srv://madegbenro908:59q5S9eb6bcFWoLp@cluster0.cxpgvz9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
-const connectionString = 'mongodb+srv://madegbenro908:59q5S9eb6bcFWoLp@cluster0.cxpgvz9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+let isConnected: boolean = false; // Track the connection status
 
 export async function connectToDatabase() {
   if (isConnected) {

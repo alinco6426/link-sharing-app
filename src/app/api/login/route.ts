@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 const secretKey = 'defaultSecretKey'; 
 
 export async function POST(req: Request, res: Response) {
-  await connectToDatabase();
+//   await connectToDatabase();
   try {
     const { email, password } = await req.json();
 
