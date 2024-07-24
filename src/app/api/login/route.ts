@@ -2,7 +2,7 @@ import { connectToDatabase } from '../../lib/db';
 import User from '../../lib/UserModel';
 import jwt from 'jsonwebtoken';
 
-const secretKey = process.env.JWT_SECRET || 'defaultSecretKey'; 
+const secretKey = 'defaultSecretKey'; 
 
 export async function POST(req: Request, res: Response) {
   await connectToDatabase();
