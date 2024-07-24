@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Rubik:wght@300;500&display=swap');
+
+:root {
+     --purple: hsl(252, 100%, 62%);
+     --light-purple: hsl(252, 100%, 84%);
+     --very-light-purple: hsl(252, 100%, 96%);
+     --very-dark-grey: hsl(0, 0%, 20%);
+     --dark-grey: hsl(0, 0%, 45%);
+     --light-grey: hsl(0, 0%, 85%);
+     --pale-silver: hsl(0, 0%, 98%);
+     --white: hsl(0, 0%, 100%);
+     --orange: hsl(0, 100%, 61%);
+}
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Instrument sans";
+}
+* button {
+     border: none;
+     outline: none;
+     cursor: pointer;
+     font-family: "instrument sans";
+}

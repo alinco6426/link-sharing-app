@@ -1,0 +1,124 @@
+nav {
+     width: 100%;
+     height: 100px;
+     background-color: var(--white);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+     padding-inline: 50px;
+}
+
+nav .nav-links-container {
+     display: flex;
+     align-items: center;
+}
+
+.nav-link {
+     width: auto;
+     height: 45px;
+     background-color: transparent;
+     color: var(--dark-grey);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 500;
+     padding: 20px 30px;
+     border-radius: 8px;
+     margin-inline: 5px;
+}
+
+.nav-link img {
+     margin-right: 10px;
+}
+
+.nav-link.active {
+     background-color: var(--very-light-purple);
+     color: var(--purple);
+}
+
+.preview-button-container {
+     width: auto;
+     height: auto;
+     display: flex;
+     align-items: center;
+}
+
+.preview-button-container .preview-button {
+     width: 100px;
+     height: 40px;
+     background-color: transparent;
+     color: var(--purple);
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 500;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid var(--purple);
+     border-radius: 8px;
+}
+
+.preview-button img {
+     display: none;
+}
+
+/*styling for tablet view*/
+@media screen and (min-width:769px) and (max-width:1200px) {
+     nav {
+          width: 100%;
+          height: 100px;
+          padding: 20px;
+     }
+}
+
+/*styling for mobile view*/
+
+@media screen and (max-width: 768px) {
+     nav {
+          width: 100%;
+          height: 100px;
+          padding: 20px;
+     }
+
+     .logo-container img {
+          width: 50px;
+     }
+
+     nav .nav-links-container {
+          display: flex;
+          align-items: center;
+     }
+
+     .nav-link {
+          width: auto;
+          height: 45px;
+          padding: 20px;
+     }
+
+     .nav-link p {
+          display: none;
+     }
+
+     .nav-link img {
+          width: 30px;
+          margin-right: 10px;
+     }
+
+     .preview-button-container .preview-button {
+          width: auto;
+          height: 40px;
+          padding: 20px;
+     }
+
+     .preview-button p {
+          display: none;
+     }
+
+     .preview-button img {
+          width: 30px;
+          display: block;
+     }
+}
